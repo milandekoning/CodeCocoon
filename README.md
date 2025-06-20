@@ -17,7 +17,7 @@ public int test() {
 ```
 Such a transformation preserves the functionality of the code while making it appear differently.
 
-These transformations can be used for testing the robustness of LLMs for coding tasks and mitigate data leakage in LLMs. We found that the median success rate of ChatGPT-4o repairing bugs in the [Defects4J](https://github.com/rjust/defects4j) dataset can drop by up to 20% when testing with transformed snippets.
+These transformations can be used for testing the robustness of LLMs for coding tasks and mitigate data leakage in LLMs. We found that the mean success rate of Claude-3.7-Sonnet repairing bugs in the [Defects4J](https://github.com/rjust/defects4j) dataset can drop by up to 4.1% when testing with transformed snippets.
 
 
 
