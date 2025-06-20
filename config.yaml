@@ -1,0 +1,20 @@
+inputFilePath: "datasets/defects4j-chart-1.json"
+outputFilePath: "datasets/defects4j-chart-1-transformed.json"
+
+transformers:
+  - name: functionNameTransformer
+  - name: parameterNameTransformer
+  - name: variableNameTransformer
+  - name: forToWhileTransformer
+  - name: nestElseIfTransformer
+  - name: reverseIfTransformer
+  - name: swapRelationOperandsTransformer
+  - name: expandUnaryIncrementTransformer
+  - name: swapEqualsOperandsTransformer
+
+synonymGenerator:
+  name: llmSynonymGenerator
+  llm:
+    provider: openai
+    model: ChatGPT4o-mini
+    cachePath: ".llmcache.db"
